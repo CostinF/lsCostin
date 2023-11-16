@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "cypress": "^13.5.1"
+  },
+  "scripts": {
+    "start:chrome": "npx cypress run --browser chrome --spec 'cypress/e2e/amazonItemPrice.cy.js'",
+    "start:firefox": "npx cypress run --browser firefox --spec 'cypress/e2e/amazonItemPrice.cy.js'",
+    "start:both": "npx cypress run --browser chrome --spec 'cypress/e2e/amazonItemPrice.cy.js' && npx cypress run --browser firefox --spec 'cypress/e2e/amazonItemPrice.cy.js'"
+  }
+}
